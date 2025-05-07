@@ -1,0 +1,247 @@
+/* 
+* Planter's Home - Responsive Stylesheet
+* Created for Business: Planter's Home
+* Author: Web Developer
+* Version: 1.0
+*/
+
+/* ======== Responsive Styles ======== */
+
+/* Large Screens (Desktops) */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+    
+    html {
+        font-size: 58%;
+    }
+    
+    .feature-box,
+    .category,
+    .value-item {
+        min-width: 220px;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 56%;
+    }
+    
+    .hero-content h2 {
+        font-size: 4rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.8rem;
+    }
+    
+    .feature-boxes,
+    .product-categories {
+        justify-content: center;
+    }
+    
+    .footer-content {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-logo,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .contact-item {
+        justify-content: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .founder {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .founder-image {
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+/* Small Screens (Landscape Phones) */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 54%;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 80px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-menu li {
+        margin: 0 0 var(--spacing-md);
+    }
+    
+    .close-menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2.4rem;
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+    
+    .hero {
+        height: 60vh;
+    }
+    
+    .hero-content h2 {
+        font-size: 3.6rem;
+    }
+    
+    .feature-box,
+    .category,
+    .product-card {
+        max-width: 100%;
+    }
+    
+    .about-content,
+    .contact-grid {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        order: -1;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .contact-details {
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .section-title {
+        font-size: 2.8rem;
+    }
+    
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 80%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Extra Small Screens (Portrait Phones) */
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 52%;
+    }
+    
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero-content {
+        padding: var(--spacing-sm);
+    }
+    
+    .hero-content h2 {
+        font-size: 3.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.6rem;
+    }
+    
+    .section-title {
+        font-size: 2.6rem;
+    }
+    
+    .feature-box,
+    .category,
+    .value-item,
+    .product-card {
+        min-width: 100%;
+    }
+    
+    .footer-content > div {
+        min-width: 100%;
+    }
+    
+    .accordion-header h4 {
+        font-size: 1.6rem;
+    }
+    
+    .cta h2 {
+        font-size: 3rem;
+    }
+    
+    .banner-content h2 {
+        font-size: 3.2rem;
+    }
+    
+    .filter-btn {
+        width: 100%;
+    }
+    
+    .about-text h2,
+    .info-content h2 {
+        font-size: 2.8rem;
+    }
+    
+    .mission-box, 
+    .vision-box {
+        min-width: 100%;
+    }
+    
+    .gallery-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Very Small Screens */
+@media screen and (max-width: 350px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.8rem;
+    }
+    
+    .logo h1 {
+        font-size: 2.4rem;
+    }
+    
+    .btn {
+        padding: 1rem 2rem;
+    }
+}
